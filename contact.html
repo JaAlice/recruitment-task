@@ -7,7 +7,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="application.css">
 </head>
-<body>
+<body id="body_all">
     
     <header>
         <ul class="navigation">
@@ -27,6 +27,45 @@
 <section>
     <div><img class="logo-intro" src="./assets/logo_mrcoffee.png"></div>
 </section>
+<h2 class= "colorForm">Dites nous tout !</h2>
+<div id="send_form_status" class="sForm"></div>
+<form method="post" id="contact_form" class="sForm">
+     <div class="outerDiv"><div class="divInner"><label for="name" class= "colorLab">Nom*</label></div>
+     <div><input type="text" name="name" id="name" class="formField" placeholder="Wpisz imię..." required=true pattern="\w+" title="Użyj tylko liter"/></div>
+     
+     <div class="divInner"><label for="surname" class= "colorLab">Prenom*</label></div>
+     <div><input type="text" name="surName" id="surname" class="formField"  placeholder="Wpisz nazwisko..." required=true pattern="\w+" title="Użyj tylko liter"/></div>
+
+     <div class="divInner"><label for="phone" class= "colorLab">Telephone</label></div>
+     <div><input type="text" name="phone" id="phone" class="formField"  placeholder="Wpisz numer..." pattern="\+{0,1}[0-9]{9,25}" title="Użyj tylko cyfr (co najmniej 9), dopuszczalny jest znak + na początku"/></div>
+
+     <div class="divInner"><label for="email" class= "colorLab">Adresse email*</label></div>
+     <div><input type="email" name="email" id="email" class="formField"  placeholder="Wpisz adres email..." required=true pattern="\w+@\w+.(\w){2,5}" title="Adres składa się z nazwy użytkownika, następnie znak @, następnie nazwa domeny, która musi zawierać kropkę - na przykład jan@muzyka.pl"/></div>
+     
+     <div class="divInner"><label for="message" class= "colorLab">Message*</label></div>
+     <div><textarea name="message" id="message" class="formFieldMes"  placeholder="Wiadomość" required=true></textarea></div>
+    <div><button id="sendBtn" type="submit" class="sButton">On vous attend !</button></div></div>
+</form>;
+
+<div class="blocker" id="blocker1">
+    <div id="popup_all" class="popup_all">
+        <section>
+            <div><h2 class="pop-bigText">MERCI</h2></div>
+            <div class="pop-container"><img class="logo-pop" src="./assets/logo_dark.png">
+            <h2 class="pop-text">Votre message a bien été envoyé !</h2></div>
+        </section>
+            <div class="pop">
+                <h3 class="pop-smallText">Nous essaierons d’y répondre au mieux dans les plus brefs délais. À bientot chez Mr.CoffeeVotre message</h3>
+            </div>
+            <div class="popButtonDiv"><button id="okb" type="button" class="popButton" class="popButtonDiv">FERMER</button></div>
+        </div>
+</div>;
+
+
+
+<script src="js/form.js">
+</script>
+
     <div><h2 class="mid-text-contact">Czekamy na Ciebie!</h2></div>
 
     
