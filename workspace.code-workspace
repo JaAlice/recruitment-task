@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\JS"
+		},
+		{
+			"path": "..\\JavaScript zadania\\exercises-2-functions-JaAlice1"
+		},
+		{
+			"path": "..\\JavaScript zadania\\exercises-3-arrays-objects-JaAlice"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "www"
+	}
+}
